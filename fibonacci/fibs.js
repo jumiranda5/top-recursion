@@ -1,11 +1,11 @@
 'use-strict'
 
-const getFibonacciSequence = () => {
+const getFibonacciSequence = (n) => {
 
     let sequence = [];
 
     let i = 0;
-    while (i < 8) {
+    while (i < n) {
         let number;
         if (i === 0) number = 0;
         else if (i === 1) number = 1;
@@ -23,4 +23,4 @@ const getFibonacciSequence = () => {
 
 }
 
-console.log("Fibonacci sequence: " + getFibonacciSequence());
+console.log("Fibonacci sequence: " + getFibonacciSequence(8));
