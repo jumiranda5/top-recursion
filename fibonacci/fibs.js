@@ -7,13 +7,10 @@ const getFibonacciSequence = (n) => {
     let i = 0;
     while (i < n) {
         let number;
+        
         if (i === 0) number = 0;
         else if (i === 1) number = 1;
-        else {
-            let index1 = i - 1;
-            let index2 = i - 2;
-            number = sequence[index1] + sequence[index2];
-        }
+        else number = sequence[i - 1] + sequence[i - 2];
 
         sequence.push(number);
         i++;
